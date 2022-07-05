@@ -1,0 +1,83 @@
+.colaboracao__content{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+}
+.colaboracao__content .back__icon{
+    position:absolute;
+    left:0px;
+    top:0;
+    font-size:4em;
+    color:#3255a0;
+}
+
+.colaboracao__content .first__content{
+    width:50%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.colaboracao__content .first__content p{
+    font-family:'Baloo 2', cursive;
+    font-size:2.4em;
+    color:#3255a0;
+    background-color:white;    
+    font-weight:600;
+}
+.colaboracao__content .first__content p span{
+    display:block;
+    color:#75B9D4;
+    font-weight:800;
+}
+
+
+
+.colaboracao__content .second__content{
+    width:50%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    row-gap:20px;
+    background-color:#3255a0;
+}
+.colaboracao__content .second__content :is(.first__text, .second__text){
+    width:60%;
+}
+.colaboracao__content .second__content :is(.first__text h2, .second__text h2){
+    color:#75B9D4;
+    font-weight:900;
+    font-size:1.6em;
+}
+.colaboracao__content .second__content :is(.first__text p, .second__text p){
+    color:white;
+    font-size:1.4em;
+}
+.colaboracao__content .second__content .continueOption{
+    background-color:#75B9D4;
+    font-size: 1.6em;
+    font-weight:bolder;
+    color:#3255a0;
+    padding:20px;
+    border-radius:30px;
+    border:none;
+    transition:.7s ease-out all;
+    cursor:pointer;
+}
+.colaboracao__content .second__content .continueOption:hover{
+    transform:scale(1.1);
+    animation:animBoxShadow 1.4s cubic-bezier(.23,.81,.88,.53) alternate infinite 
+}
+
+@keyframes animBoxShadow {
+    from {
+        box-shadow: 0 0 0px #75B9D4
+    }
+    to{
+        box-shadow: 0px 0px 200px #75B9D4;
+    }
+}

@@ -1,0 +1,206 @@
+.perfil__content{
+    min-height:100vh;
+    width:90%;
+    background-color:#3255a0;
+    margin:0 auto;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+}
+.perfil__content .perfil__contentHeader{
+    width:90%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    align-self:center;
+    padding-top:20px;
+}
+.perfil__content .perfil__contentHeader .kairosLogo{
+    width:120px;
+    height:120px;
+    cursor:pointer;
+}
+.perfil__content .perfil__contentHeader .kairosLogo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.perfil__content .perfil__contentHeader .link__comunidade{
+    display:flex;
+    align-items:center;
+    color:white;
+    font-size:1.2em;
+    column-gap:25px;
+}
+.perfil__content .perfil__contentHeader .link__comunidade .img__wrapper{
+    width:75px;
+    height:75px;
+}
+.perfil__content .perfil__contentHeader .link__comunidade .img__wrapper img{
+    height:100%;
+    width:100%;
+}
+
+.perfil__content .perfil__contentMain{
+    width:100%;
+    height:100%;
+    background:#3255a0;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+} 
+.perfil__content .perfil__contentMain .perfilUser__wrapper{
+    width:500px;
+    height:529px;
+    background:white;
+    border-radius:30px;
+    padding:20px 30px;
+    display:flex;
+    flex-direction:column;
+    row-gap:70px;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__header{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__header .start__items{
+    display:flex;
+    align-items:center;
+    color:#3255a0;
+    font-size:1.2em;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__header .start__items span{
+    margin-left:10px;
+
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__header :is(.start__items .userImg, .userCountry)  {
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__header :is(.start__items .userImg img, .userCountry img){
+    width:100%;
+    height:100%;
+    border-radius:inherit;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__header .start__items .userImg img{
+    width:140%;
+    height:140%;
+    object-fit:contain;
+    transform:translate(-20%, -10%)
+}
+
+.perfil__content .perfil__contentMain .perfilUser__wrapper  :is(.perfilUser__header  .split__line, .perfilUser__bio  .split__line){
+    width:100%;
+    height:3px;
+    background-color:#3255a0;
+    border-radius:10px;
+    position:absolute;
+    bottom:-40px;
+    left:0;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper  :is(.perfilUser__header  .split__line, .perfilUser__bio  .split__line)::after{
+    content:'';
+    width:7px;
+    height:7px;
+    border:3px solid #3255a0;
+    border-radius:50%;
+    position:absolute;
+    left:-11px;
+    bottom:-5px;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper  :is(.perfilUser__header  .split__line, .perfilUser__bio  .split__line)::before{
+    content:'';
+    width:7px;
+    height:7px;
+    border:3px solid #3255a0;
+    border-radius:50%;
+    position:absolute;
+    right:-11px;
+    bottom:-5px;
+}
+
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__bio{
+    text-align:center;
+    color:#3255a0;
+    font-size:1.2em;
+    position:relative;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__options {
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__options ul{
+    list-style:none;
+    color:#3255a0;
+    font-size:1.6em;
+    font-family:'Baloo 2', cursive;
+    font-weight:bold;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__options ul li{
+    padding:5px 0;
+    cursor:pointer;
+    transition:.6s ease all;
+}
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__options ul li:hover{
+    transform:scale(1.2);
+    text-shadow: 0 0 10px #3255a0;
+}
+.perfil__contentMain .destaques__wrapper{
+    width:350px;
+    height:450px;
+    background:white;
+    align-self:flex-start;
+    border-radius:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    row-gap:30px;
+    position:relative;
+}
+.perfil__contentMain .destaques__wrapper h2{
+    text-align:center;
+    color:#3255a0;
+    font-family:'Baloo 2', cursive;
+    font-size:1.5em;
+    position:absolute;
+    top:20px;
+}
+.perfil__contentMain .destaques__wrapper :is(.firstLine__options, .secondLine__options) {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    column-gap:20px;
+}
+.perfil__contentMain .destaques__wrapper :is(.firstLine__options .first__item, .second__item), :is(.secondLine__options .first__item,.second__item) {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-size:0.8em;
+}
+.perfil__contentMain .destaques__wrapper :is(.firstLine__options .item, .secondLine__options .item) {
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:2px solid #3255a0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.perfil__contentMain .destaques__wrapper :is(.firstLine__options .item img, .secondLine__options .item img){
+    width:90%;
+    height:90%;
+    border-radius:inherit;
+} 
+

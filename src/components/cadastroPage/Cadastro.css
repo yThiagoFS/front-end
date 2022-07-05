@@ -1,0 +1,118 @@
+.cadastro__content{
+    width:100%;
+    min-height:100vh;
+    background-image:url('./img/cadastroBg.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.cadastro__content .cadastro__header{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    color:white;
+    font-family: 'Baloo 2', cursive;
+}
+.cadastro__content .cadastro__header .back__icon{
+    position:absolute;
+    left:5%;
+    font-size:60px;
+    color:white;
+    top:0;
+}
+.cadastro__content .cadastro__main{
+    width:80%;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    height:70vh;
+}
+.cadastro__content .cadastro__main .userImg .userFile{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:none;
+    outline:none;
+}
+.cadastro__content .cadastro__main .userImg .userFile::after{
+    content:'';
+    display:block;
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    background-image: url('./img/userImgBtn.png');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    opacity:0.8;
+}
+.cadastro__content .cadastro__main :is(.first__column, .second__column){
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    height:50%;
+}
+.cadastro__content .cadastro__main :is(.first__column label, .second__column label) {
+    color:white;
+    font-size:1.3em;
+    font-weight:bold;
+}
+.cadastro__content .cadastro__main :is(.first__column input, .second__column input) {
+   max-width:300px;
+   min-width:290px;
+   width:100%;
+   height:40px; 
+   border-radius:10px;
+   text-indent:4px;
+   border: 1px solid black;
+}
+.cadastro__content .cadastro__main :is(.first__column input:focus, .second__column input:focus){
+    border: 2px solid black;
+    outline:none;
+}
+.cadastro__content .cadastro__main .second__column :is(.wrapper__password .showPassword, .wrapper__confirmPassword .showPassword){
+    height: 25px;
+    position: absolute;
+    right:0;
+    width: 25px;
+    cursor:pointer;
+    margin: 8px;
+}
+.cadastro__content .cadastro__main .second__column :is(.wrapper__password, .wrapper__confirmPassword){
+    position:relative;
+}
+.cadastro__content .cadastro__main .submitCadastro{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    background:none;
+    border:none;
+    border-radius:30px;
+    font-size:30px;
+    font-weight:bold;
+    font-family: 'Baloo 2', cursive;
+    color:white;
+    cursor:pointer;
+    transition:.5s ease-in;
+}
+.cadastro__content .cadastro__main .submitCadastro:hover {
+    background:white;
+    transition:.7s ease-out;
+    box-shadow:0 0 40px rgba(255, 255, 255, 0.475);
+    color:#3255a0;
+}
+.cadastro__content .cadastro__main .submitCadastro:hover .arrowBtn{
+    animation:animateArrow 2s cubic-bezier(.19,.88,1,.66) forwards;
+}
+
+
+@media screen and (max-width:930px){
+    .cadastro__content .cadastro__main{
+        flex-direction:column;
+    }
+}

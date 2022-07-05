@@ -1,0 +1,43 @@
+.colaboracao__content .second__content .options__container{
+    width:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    row-gap:30px;
+}
+.colaboracao__content .second__content .options__container h2{
+    color:#75B9D4;
+    font-size:1.7em;
+}
+.colaboracao__content .second__content .options__container .options__wrapper{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+.colaboracao__content .second__content .options__container .options__wrapper .option{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.colaboracao__content .second__content .options__container .options__wrapper .option button{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:none;
+    cursor:pointer;
+}
+.colaboracao__content .second__content .options__container .options__wrapper .option .pessoaFisica{
+    background-image:url('./img/userImgBtn.png');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
+.colaboracao__content .second__content .options__container .options__wrapper .option .pessoaJuridica{
+    background-image:url('./img/pessoa-juridica.png');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
+.colaboracao__content .second__content .options__container .options__wrapper .option h3{
+    color:white;
+}

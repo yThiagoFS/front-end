@@ -1,0 +1,237 @@
+.comunidade__content{
+    min-height:100vh;
+    width:100%;
+}
+
+.comunidade__content .comunidade__header{
+    width:100%;
+    background-color:#3255a0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px 70px;
+    position:fixed;
+    top:0;
+    z-index:2;
+}
+.comunidade__content .comunidade__header .kairosLogo{
+    width:80px;
+    height:80px;
+    cursor:pointer;
+}
+.comunidade__content .comunidade__header .kairosLogo img{
+    width:140%;
+    height:140%;
+    object-fit:contain;
+    transform:translateY(-15%)
+}
+.comunidade__content .comunidade__header .userProfile{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+}
+.comunidade__content .comunidade__header .userProfile .modal__config{
+    width:150px;
+    height:200px;
+    position:absolute;
+    opacity:0;
+    right:-75%;
+    pointer-events:none;
+    background:#3255a0;
+    transform:translateY(20%);
+    transition:.7s ease-in all;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    color:white;
+    font-size:15px;
+}
+.comunidade__content .comunidade__header .userProfile .modal__config .item{
+    display:flex;
+    column-gap:8px;
+    align-items:center;
+    cursor:pointer;
+}  
+.comunidade__content .comunidade__header .userProfile .modal__config .item:hover{
+    transition:.5s ease-in-out;
+    transform:scale(1.2)
+}
+
+.comunidade__content .comunidade__header .userProfile .modal__config .logout__btn{
+    border-top:1px solid white;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.comunidade__content .comunidade__header .userProfile .modal__config.is-active{
+    transition:1.3s ease-out all;
+    transform:translateY(40%);
+    opacity:1;
+    pointer-events:all;
+}
+.comunidade__content .comunidade__header .userProfile .userProfile__img{
+    width:60px;
+    height:60px;
+    cursor:pointer;
+   
+}
+.comunidade__content .comunidade__header .userProfile .userProfile__img img{
+    width:200%;
+    height:200%;
+    object-fit:contain;
+    transform:translate(-20%,-20%);
+}
+
+.comunidade__content .comunidade__header .searchForm{
+    width:50%;
+}
+.comunidade__content .comunidade__header .searchForm .searchInput{
+    width:100%;
+    height:35px;
+    border-radius:15px;
+    box-shadow: 2px 2px 5px #010b20;
+    border:none;
+    text-indent:30px;
+}
+
+.comunidade__content .wrapper__sugestions{
+    margin-top:10%;
+}
+.comunidade__content .timeline{
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    flex-direction:column;
+    margin-top:10%;
+    row-gap:25px;
+    z-index:-1;
+}
+
+.comunidade__content .timeline li{
+    max-width:750px;
+    width:100%;
+    height:500px;
+    background-color:#3255a0;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    row-gap:20px;
+}
+.comunidade__content .timeline li .post__menu{
+    position:absolute;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    left:2%;
+    top:8%;
+    justify-self:flex-start;
+    font-size:30px;
+    color:white;
+    row-gap:40px;
+}
+.comunidade__content .timeline li .post__menu .icon__post{
+    cursor:pointer;
+}
+.comunidade__content .timeline li .container__img{
+    max-width:600px;
+    max-height:350px;
+    width:100%;
+    height:100%;
+}
+.comunidade__content .timeline li .container__img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.comunidade__content .timeline li .footer__post{
+    max-width:500px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around
+}
+.comunidade__content .timeline li .footer__post .user__profile{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+}
+.comunidade__content .timeline li .footer__post .user__profile .user__img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.comunidade__content .timeline li .footer__post .user__profile .user__img img{
+    width:100%;
+    height:100%;
+    border-radius:inherit;
+}
+.comunidade__content .timeline li .footer__post .user__profile span{
+    color:white;
+}
+.comunidade__content .timeline li .footer__post .post__caption{
+    width:60%;
+    text-align:center;
+    font-size:14px;
+    color:white;
+}
+
+
+
+
+
+/*CSS Dos Sliders*/
+.comunidade__content .wrapper__sugestions {
+    text-align:center;
+    
+}
+.comunidade__content .wrapper__sugestions h1{
+    color:#3255a0;
+    font-size:1.6em;
+    padding:10px;
+}
+.comunidade__content .wrapper__sugestions .swiper{
+    width:80%;
+    height:60%;
+    display:flex;
+}
+
+.comunidade__content .wrapper__sugestions .swiper-slide{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    row-gap:25px;
+}
+.comunidade__content .wrapper__sugestions .swiper-slide .card__wrapper{
+    width:150px;
+    height:150px;
+}
+.comunidade__content .wrapper__sugestions .swiper-slide .card__wrapper:hover{
+    transition:.9s ease-out;
+    transform:scale(1.2);
+    cursor:pointer;
+}
+.comunidade__content .wrapper__sugestions .swiper-slide .card__wrapper img{
+    width:100%;
+    height:100%;
+}
+.comunidade__content .wrapper__sugestions .swiper-button-next:after{
+    color:#3255a0;
+    text-shadow: 0px 0px 10px black;
+}
+.comunidade__content .wrapper__sugestions .swiper-button-prev:after{
+    color:#3255a0;
+    text-shadow: 0px 0px 10px black;
+
+}
+.comunidade__content .wrapper__sugestions .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom:0;
+    z-index:2;
+}

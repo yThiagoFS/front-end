@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+    box-sizing:border-box;
+}
+body{
+    min-height:100vh;
+    width:100%;
+    position:relative;
+    overflow-x:hidden;
+    font-family: 'Open Sans', sans-serif;
+}  
+
+a{
+    text-decoration:none;
+}
+a:visited{
+    color:inherit;
+}
+
+@keyframes showModal{
+    to{
+        opacity:1;
+        transform:translate(0);
+    }
+}
+
+@keyframes animateArrow{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.btn__login{
+    background-color: #f6f6f6;
+    padding:3px 30px;
+    color: #3255a0;
+    font-size:20px;
+    font-weight:700;
+    border:none;
+    border-radius:35px;
+    transition: .6s ease-out all .1s;
+    position:relative;
+    font-family: 'Baloo 2', cursive;
+    
+}
+.btn__login::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#f6f6f6;
+    z-index:-1;
+    clip-path:circle(0% at 100px 90%);
+    transition:.5s;
+    border-radius:35px;
+}
+.btn__login:hover{
+    background-color:transparent;
+    transition: .4s ease-in;
+    box-shadow:2px 5px black;
+    cursor:pointer;
+}
+.btn__login:hover::after{
+    clip-path:circle(100% at 60px 100%)
+}
+
+.textoErrado{
+    display:none;
+}
+.textoErrado.active{
+    display:block;
+    color:RED;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+

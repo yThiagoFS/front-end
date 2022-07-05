@@ -1,0 +1,238 @@
+.tiposIntercambio__content{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+.tiposIntercambio__content .trail__sideTipos{
+    width:65%;
+    height:100%;
+    background-color:#3255a0;
+    clip-path: polygon(0 0, 77% 0, 59% 100%, 0% 100%);
+}
+
+.tiposIntercambio__content .trail__sideTipos .containerImg__trail{
+    width:40%;
+    height:100%;
+    margin: 0% 18%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.tiposIntercambio__content .trail__sideTipos .containerImg__trail .img__container{
+    width:340px;
+    height:250px;
+}
+.tiposIntercambio__content .trail__sideTipos .containerImg__trail .img__container img{
+    width:100%;
+    height:100%;
+    border-radius:20px;
+}
+.tiposIntercambio__content .trail__sideTipos .containerImg__trail .img__container .img1{
+    transform:translate(-15%, 20%) rotate(-20deg)
+}
+.tiposIntercambio__content .trail__sideTipos .containerImg__trail .img__container .img2{
+    transform:translate(15%, -10%) rotate(10deg)
+}
+
+
+.tiposIntercambio__content .content__tiposIntercambio{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:35%;
+    height:100%;
+    justify-content:center;
+    z-index:2;
+}
+.tiposIntercambio__content .content__tiposIntercambio h1{
+    font-size:50px;
+    font-family: 'Baloo 2', cursive;
+    color:#3255a0;
+}
+.tiposIntercambio__content .content__tiposIntercambio .verMais{
+    position:absolute;
+    bottom:10%;
+    margin-right:15px;
+}
+.tiposIntercambio__content .content__tiposIntercambio .verMais >button{
+    background:none;
+    border:none;
+    color:#3255a0;
+    font-weight:bold;
+    cursor:pointer;
+    transition: .5s ease-in ;
+    font-family: 'Baloo 2', cursive;
+    font-size:1.2em;
+}
+.tiposIntercambio__content .content__tiposIntercambio .verMais>button:hover{
+    transition: .4s ease-out;
+    transform:scale(1.3);
+    text-shadow: 0 0 6px #3255a099;
+}
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    width:100%;
+    height:100%;
+}
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .modal__Tipos{
+    position:relative;
+    background-color:#c2cce3;
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    width:425px;
+    height:410px;
+    border-radius:25px;
+    opacity:0;
+    transform:translateY(-50px);
+}
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container.is-active .modal__Tipos{
+    display:flex;
+    animation: showItems .5s ease-out forwards;
+}
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container.is-active .line{
+    display:none;
+}
+
+@keyframes showItems{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .modal__Tipos .close__icon{
+    width:30px;
+    height:30px;
+    position:absolute;
+    left:5%;
+    
+}
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .modal__Tipos .close__icon:hover{
+    cursor:pointer;
+}
+
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .modal__Tipos  .p1{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Baloo 2', cursive;
+    color:#3255a0;
+    width:25%;
+    opacity:0;
+    align-self:flex-end;
+    right:5%;
+    user-select:none;
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container.is-active .modal__Tipos  .p1{
+    animation: showItems 1s ease-out forwards .4s
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .modal__Tipos  .p1::after{
+    content:'';
+    display:block;
+    position:absolute;
+    bottom:0;
+    height:3px;
+    width:0%;
+    background-color:#3255a0;
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container.is-active .modal__Tipos  .p1::after{
+    animation: growLine 2.0s ease-in-out forwards .4s;
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .modal__Tipos .btn__verMais{
+    background: none;
+    border: none;
+    color:#3255a0;
+    font-weight: bold;
+    opacity:0;
+}
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .modal__Tipos .btn__verMais:hover{
+    cursor:pointer;
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container.is-active .modal__Tipos .btn__verMais{
+    animation: showItems 1s ease-out forwards .8s
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .modal__Tipos .btn__verMais::after{
+    content:'';
+    display:block;
+    height:3px;
+    width:0;
+    background-color:#3255a0;
+    opacity:0;
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container.is-active .modal__Tipos .btn__verMais::after{
+    animation: growLine .9s ease-out forwards 1s;
+}
+
+@keyframes growLine {
+    to{
+        width:100%;
+        opacity:1;
+    }
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .modal__Tipos p{
+    text-align:center;
+    width:80%;
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .line{
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .line .icon{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    row-gap:5px;
+    width:100px;
+    height:100px;
+    border-radius:20px;
+    background-color: #c2cce3;
+    margin-top:15px;
+}
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container .line .icon:hover{
+    cursor:pointer;
+}
+
+.tiposIntercambio__content .content__tiposIntercambio .tipos__container h3{
+    font-family: 'Baloo 2', cursive;
+    font-size:18px;
+    color:#3255a0;
+}
+
+.tipos__container img{
+    width:70%;
+    height:70%;
+    border-radius:20px;
+    pointer-events:none;
+}
+
+
+

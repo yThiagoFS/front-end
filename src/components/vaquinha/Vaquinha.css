@@ -1,0 +1,109 @@
+.vaquinha__content{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+
+.vaquinha__content .vaquinha__header{
+    width:100%;
+    background-color:#3255a0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px 70px;
+    position:fixed;
+    top:0;
+    z-index:2;
+}
+.vaquinha__content .vaquinha__header .kairosLogo{
+    width:60px;
+    height:60px;
+    cursor:pointer;
+}
+.vaquinha__content .vaquinha__header .kairosLogo img{
+    width:150%;
+    height:150%;
+    object-fit:contain;
+    transform:translate(-10%, -18%)
+}
+.vaquinha__content .vaquinha__header .userProfile{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+}
+.vaquinha__content .vaquinha__header .userProfile .modal__config{
+    width:150px;
+    height:200px;
+    position:absolute;
+    opacity:0;
+    right:-75%;
+    pointer-events:none;
+    background:#3255a0;
+    transform:translateY(20%);
+    transition:.7s ease-in all;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    color:white;
+    font-size:15px;
+}
+.vaquinha__content .vaquinha__header .userProfile .modal__config .item{
+    display:flex;
+    column-gap:8px;
+    align-items:center;
+    cursor:pointer;
+}  
+.vaquinha__content .vaquinha__header .userProfile .modal__config .item:hover{
+    transition:.5s ease-in-out;
+    transform:scale(1.2)
+}
+
+.vaquinha__content .vaquinha__header .userProfile .modal__config .logout__btn{
+    border-top:1px solid white;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.vaquinha__content .vaquinha__header .userProfile .modal__config.is-active{
+    transition:1.3s ease-out all;
+    transform:translateY(40%);
+    opacity:1;
+    pointer-events:all;
+}
+.vaquinha__content .vaquinha__header .userProfile .userProfile__img{
+    width:60px;
+    height:60px;
+    cursor:pointer;
+}
+.vaquinha__content .vaquinha__header .userProfile .userProfile__img img{
+    width:140%;
+    height:140%;
+    object-fit:contain;
+    transform:translate(-20%, -10%)
+}
+.vaquinha__content .vaquinha__header .searchForm{
+    width:50%;
+}
+.vaquinha__content .vaquinha__header .searchForm .searchInput{
+    width:100%;
+    height:35px;
+    border-radius:15px;
+    box-shadow: 2px 2px 5px #010b20;
+    border:none;
+    text-indent:30px;
+}
+
+.vaquinha__content .vaquinha__main{
+    min-height:100vh;
+    width:90%;
+    margin-top:7.5%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding-bottom:10px;
+}

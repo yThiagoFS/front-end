@@ -1,0 +1,205 @@
+html{
+    scroll-behavior:smooth;
+}
+
+.comunidade__contentKairos{
+    min-height:100vh;
+    width:100%;
+}
+
+.comunidade__contentKairos .comunidade__header{
+    width:100%;
+    background-color:#3255a0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px 70px;
+    position:fixed;
+    top:0;
+    z-index:2;
+}
+.comunidade__contentKairos .comunidade__header .kairosLogo{
+    width:60px;
+    height:60px;
+    cursor:pointer;
+}
+.comunidade__contentKairos .comunidade__header .kairosLogo img{
+    width:170%;
+    height:170%;
+    object-fit:contain;
+    transform:translateY(-20%)
+}
+.comunidade__contentKairos .comunidade__header .userProfile{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+}
+.comunidade__contentKairos .comunidade__header .userProfile .modal__config{
+    width:150px;
+    height:200px;
+    position:absolute;
+    opacity:0;
+    right:-75%;
+    pointer-events:none;
+    background:#3255a0;
+    transform:translateY(20%);
+    transition:.7s ease-in all;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    color:white;
+    font-size:15px;
+}
+.comunidade__contentKairos .comunidade__header .userProfile .modal__config .item{
+    display:flex;
+    column-gap:8px;
+    align-items:center;
+    cursor:pointer;
+}  
+.comunidade__contentKairos .comunidade__header .userProfile .modal__config .item:hover{
+    transition:.5s ease-in-out;
+    transform:scale(1.2)
+}
+
+.comunidade__contentKairos .comunidade__header .userProfile .modal__config .logout__btn{
+    border-top:1px solid white;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.comunidade__contentKairos .comunidade__header .userProfile .modal__config.is-active{
+    transition:1.3s ease-out all;
+    transform:translateY(40%);
+    opacity:1;
+    pointer-events:all;
+}
+.comunidade__contentKairos .comunidade__header .userProfile .userProfile__img{
+    width:60px;
+    height:60px;
+    cursor:pointer;
+}
+.comunidade__contentKairos .comunidade__header .userProfile .userProfile__img img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.comunidade__contentKairos .comunidade__header .searchForm{
+    width:50%;
+}
+.comunidade__contentKairos .comunidade__header .searchForm .searchInput{
+    width:100%;
+    height:35px;
+    border-radius:15px;
+    box-shadow: 2px 2px 5px #010b20;
+    border:none;
+    text-indent:30px;
+}
+.comunidade__contentKairos .timeline{
+    display:flex;
+    padding:30px;
+    width:100%;
+    align-items:flex-start;
+    flex-direction:column;
+    margin-top:10%;
+    row-gap:25px;
+    z-index:-1;
+    list-style:none;
+}
+.comunidade__contentKairos .timeline li{
+    display:flex;
+    column-gap:30px;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.comunidade__contentKairos .timeline li .wrapper__userProfilePost{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    align-self:flex-start;
+    font-size:20px;
+    color:#3255a0;
+}
+.comunidade__contentKairos .timeline li .wrapper__userProfilePost .user__img{
+    width:80px;
+    height:80px;
+    cursor:pointer;
+}
+.comunidade__contentKairos .timeline li .wrapper__userProfilePost .user__img img{
+    width:140%;
+    height:140%;
+    object-fit:contain;
+    transform:translate(-13%, -10%)
+}
+
+.comunidade__contentKairos .timeline li .wrapper__userProfilePost .wrapper__postOptions{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    width:100%;
+    cursor:pointer;
+}
+.comunidade__contentKairos .timeline li .wrapperPost{
+    max-width:900px;
+    width:100%;
+    background-color:#3255a0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    row-gap:20px;
+}
+.comunidade__contentKairos .timeline li .wrapperPost .container__img{
+    max-width:500px;
+    width:100%;
+    height:100%;
+}
+.comunidade__contentKairos .timeline li .wrapperPost .container__img img{
+    width:100%;
+    height:100%;
+}
+.comunidade__contentKairos .timeline li .wrapperPost .description{
+    width:60%;
+}
+.comunidade__contentKairos .timeline li .wrapperPost .containter__tips{
+    display:flex;
+    flex-direction:column;
+    row-gap:40px;
+    padding-bottom:30px;
+}
+.comunidade__contentKairos .timeline li .wrapperPost .containter__tips li{
+    display:flex;
+    flex-direction:column;
+    row-gap:10px;
+}
+.comunidade__contentKairos .timeline li .wrapperPost .containter__tips li .img__li{
+    max-width:400px;
+    max-height:250px;
+}
+.comunidade__contentKairos .timeline li .wrapperPost .containter__tips li .img__li img{
+    width:100%;
+    height:100%;
+}
+
+.comunidade__contentKairos .timeline li .wrapperPost .containter__tips li .tip__description{
+    width:60%;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+

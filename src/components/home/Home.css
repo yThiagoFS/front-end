@@ -1,0 +1,420 @@
+
+
+.header__content{
+    overflow: hidden;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:30px;
+    z-index:3;
+    position:absolute;
+}
+.header__content .nav{
+    width:80%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.header__content .nav .navlist{
+    list-style:none;
+    display:flex;
+    justify-content:space-around;
+    width:50%; 
+    margin-right:17%;
+}
+
+
+
+.header__content .nav .navlist li a{
+    text-decoration: none;
+    color:#3255a0;
+    font-weight:700;
+    font-size:22px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.header__content .nav .navlist  li a::after{
+    content:'';
+    display:block;
+    height:3px;
+    width:0;
+    background-color:#3255a0;
+    transition:.5s
+}
+.header__content .nav .navlist li:hover a::after {
+   width:100%;
+}
+.header__content .nav .logoImg{
+    width:80px;
+    height:80px;
+}
+.header__content .nav .logoImg>img{
+    width:140%;
+    height:140%;
+    object-fit:contain;
+    transform:translateY(-15%)
+}
+.header__content .nav .btn__login{
+    background-color: #f6f6f6;
+    padding:3px 30px;
+    color: #3255a0;
+    font-size:20px;
+    font-weight:700;
+    border:none;
+    border-radius:35px;
+    transition: .6s ease-out all .1s;
+    position:relative;
+    font-family: 'Baloo 2', cursive;
+    
+}
+.header__content .nav .btn__login::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#f6f6f6;
+    z-index:-1;
+    clip-path:circle(0% at 100px 90%);
+    transition:.5s;
+    border-radius:35px;
+}
+.header__content .nav .btn__login:hover{
+    background-color:transparent;
+    transition: .4s ease-in;
+    box-shadow:2px 5px black;
+    cursor:pointer;
+}
+.header__content .nav .btn__login:hover::after{
+    clip-path:circle(100% at 60px 100%)
+}
+.home__content{
+    width:100%;
+    overflow:hidden;
+    height:100vh;
+    position:relative;
+    top:0;
+    display:flex;
+    justify-content:center;
+}
+.home__content .content{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-start;
+}
+.home__content .content .wrapper__home__content{
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    position:relative;
+}
+.home__content .blue__side{
+    width:50%;
+    height:100%;
+    background-color:#3255a0;
+    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+.home__content .blue__side .content__blueSide .img__home{
+    width:500px;
+    height:300px;
+    border-radius:20px;
+    transform:translateX(5%)
+}
+.home__content .blue__side .content__blueSide .img__home img{
+    width:100%;
+    height:100%;
+    border-radius:inherit;
+}
+.home__content .content .wrapper__home__content .cadastro__btnContainer {
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.home__content .content .wrapper__home__content .cadastro__btnContainer .btn__wrapper{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.home__content .content .wrapper__home__content .cadastro__btnContainer .btn__wrapper .cadastro__btn{
+    background:none;
+    border:none;
+    font-size:1.6em;
+    color:#3255a0;
+    font-weight:bold;
+    position:relative;
+    max-width:200px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Baloo 2', cursive;
+}
+.home__content .content .wrapper__home__content .cadastro__btnContainer .btn__wrapper .cadastro__btn span{
+    position:absolute;
+    bottom:-4px;
+    width:0%;
+    height:3px;
+    background:#3255a0;
+}.home__content .content .wrapper__home__content .cadastro__btnContainer .btn__wrapper .cadastro__btn span::after{
+    content:'';
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:3px solid #3255a0;
+    background:white;
+    position:absolute;
+    left:-5px;
+    bottom:-5px;
+    transition: .3s ease-in all;
+    opacity:0;
+}
+.home__content .content .wrapper__home__content .cadastro__btnContainer .btn__wrapper .cadastro__btn span::before{
+    content:'';
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:3px solid #3255a0;
+    background:white;
+    position:absolute;
+    right:-5px;
+    bottom:-5px;
+    transition: .3s ease-in all;
+    opacity:0;
+}
+.home__content .content .wrapper__home__content .cadastro__btnContainer .btn__wrapper .cadastro__btn:hover{
+    cursor:pointer;
+    
+}
+.home__content .content .wrapper__home__content .cadastro__btnContainer .btn__wrapper .cadastro__btn:hover span{
+    transition:.9s ease-out all;
+    width:90%
+}
+.home__content .content .wrapper__home__content .cadastro__btnContainer .btn__wrapper .cadastro__btn:hover span::before,
+.home__content .content .wrapper__home__content .cadastro__btnContainer .btn__wrapper .cadastro__btn:hover span::after{
+    transition:.3s ease-out all;
+    opacity:1;
+}
+
+
+
+
+/**/
+
+
+
+.home__content .blue__side .content__blueSide .blue__btnContainer .btn__wrapperColaboracao{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    bottom:20px;
+    left:30px;
+}
+.home__content .blue__side .content__blueSide .blue__btnContainer .btn__wrapperColaboracao .colaborador__btnBlue{
+    background:none;
+    border:none;
+    font-size:1.6em;
+    color:white;
+    font-weight:bold;
+    position:relative;
+    max-width:300px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Baloo 2', cursive;
+}
+.home__content .blue__side .content__blueSide .blue__btnContainer .btn__wrapperColaboracao .colaborador__btnBlue span{
+    position:absolute;
+    bottom:-4px;
+    width:0%;
+    height:3px;
+    background:white;
+}.home__content .blue__side .content__blueSide .blue__btnContainer .btn__wrapperColaboracao .colaborador__btnBlue span::after{
+    content:'';
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:3px solid white;
+    background:#3255a0;
+    position:absolute;
+    left:-5px;
+    bottom:-5px;
+    transition: .3s ease-in all;
+    opacity:0;
+}
+.home__content .blue__side .content__blueSide .blue__btnContainer .btn__wrapperColaboracao .colaborador__btnBlue span::before{
+    content:'';
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:3px solid white;
+    background:#3255a0;
+    position:absolute;
+    right:-5px;
+    bottom:-5px;
+    transition: .3s ease-in all;
+    opacity:0;
+}
+.home__content .blue__side .content__blueSide .blue__btnContainer .btn__wrapperColaboracao .colaborador__btnBlue:hover{
+    cursor:pointer;
+    
+}
+.home__content .blue__side .content__blueSide .blue__btnContainer .btn__wrapperColaboracao .colaborador__btnBlue:hover span{
+    transition:.9s ease-out all;
+    width:90%
+}
+.home__content .blue__side .content__blueSide .blue__btnContainer .btn__wrapperColaboracao .colaborador__btnBlue:hover span::before,
+.home__content .blue__side .content__blueSide .blue__btnContainer .btn__wrapperColaboracao .colaborador__btnBlue:hover span::after{
+    transition:.3s ease-out all;
+    opacity:1;
+}
+
+
+
+
+/*CSS do Modal de Login*/
+
+#login__form{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+}
+.content__form__wrapper{
+    position:relative;
+    top:6%;
+}
+.texts{
+    text-align:center;
+    font-size:30px;
+    color:#3255a0;
+    font-family: 'Baloo 2', cursive;
+    
+}
+div>label{
+    display:block;
+    color:#3255a0;
+}
+#email__login,
+#password__login{
+    width:300px;
+    height:38px;
+    background-color:#e9e9e9;
+    border:none;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.479);
+}
+.form__inputs{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    row-gap:20px;
+}
+.entrar__btn{
+    position:absolute;
+    right:0;
+    bottom:-30%;
+    border:none;
+    padding:4px 25px;
+    background-color:#b8b8b8;
+    border-radius:20px;
+    font-size:18px;
+    font-weight:bolder;
+    color:#3225a0;
+    cursor:pointer;
+    font-family: 'Baloo 2', cursive;
+}
+.accounts__login{
+    display:flex;
+    justify-content:center;
+    margin-top:35%;
+    align-items:center;
+    column-gap:30px;
+}
+.or{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:#3255a0;
+    font-weight:bold;
+    font-size:23px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.accounts__login .google__account .google__icon,
+.accounts__login .facebook__account .facebook_icon{
+    font-size:70px;
+}
+
+.login__options{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    row-gap:10px;
+}
+.login__options span>a{
+    text-decoration:none;
+    font-weight:bold;
+    color:#3255a0;
+    font-size:20px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.ReactModal__Content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.ReactModal__Overlay--after-open{
+    z-index:5;
+    background:rgba(0,0,0,.7) !important
+}
+
+
+#login__form.is-active{
+    animation: showModal .5s ease-out forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

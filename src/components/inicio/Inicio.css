@@ -1,0 +1,76 @@
+.wrapper__inicio{	
+	height: 100vh;
+	position:relative;
+	overflow:hidden;
+}
+
+.wrapper__inicio :is(.diagonalEsq, .diagonalDir){
+	height:100vh;
+	width:700px;
+	background-color:#3255a0;
+	position:absolute;
+}
+.wrapper__inicio .diagonalEsq{
+	bottom:0;
+	left:0;
+	clip-path: polygon(0 50%, 46% 100%, 0 100%);
+}
+.wrapper__inicio .diagonalDir{
+	right:0;
+	top:0;
+	clip-path: polygon(43% 0, 100% 56%, 100% 0);
+}
+.wrapper__inicio :is(.menu_inicio, .main_inicio, .footer_inicio){
+	width: 100%;
+	height: 200px;
+	font-size: 40px;
+	font-weight: bold;
+}
+.wrapper__inicio .menu_inicio{
+	color: #3255A0;
+	display: flex;
+	padding: 70px 0 0 10%;
+}
+.wrapper__inicio .main_inicio{
+	display: flex;
+	justify-content: center;
+}
+.wrapper__inicio .footer_inicio{
+	display: flex;
+	justify-content: flex-end;
+	height: 320px;
+}
+.footer_inicio .form_inicio{
+	color: #3255A0;
+	width: 45%;
+	padding-top: 60px;
+}
+.footer_inicio .form_inicio select{
+	background: none;
+	border: none;
+	border-bottom: 1px dashed rgb(0, 0, 0);
+	font-size: 30px;
+	font-weight: bold;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-align:center;
+	cursor:pointer;
+}
+
+.wrapper_button .submit_button{
+	background: #3255A0;
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	display: flex;
+	align-items: center;
+	border: none;
+	margin: 5% 0 0 0;
+	cursor:pointer;
+}
+.submit_button .icon_arrow{
+	height: 100%;
+	width: 55px;
+	background-color: #1A4789;
+}

@@ -1,0 +1,151 @@
+.sobreNos__content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow-y:hidden;
+}
+.sobreNos__content .sobre{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.sobreNos__content .sobre .text__sobre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #3255a0;
+    height: 140px;
+}
+.sobreNos__content .sobre .text__sobre h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.sobreNos__content .sobre .mission__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+.sobreNos__content .sobre .mission__container :is(.mission, .vision){
+    width:300px;
+    height: 200px;
+    background: #1a4789;
+    padding: 0 0 0 10px;
+    margin: 5% 0 5% 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sobreNos__content .sobre .mission__container .mission h2{
+    text-align: center;
+    color: white;
+}
+.sobreNos__content .sobre .mission__container .vision h2{
+    text-align: center;
+    color: white;
+}
+.sobreNos__content .sobre .value_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+.sobreNos__content .sobre .value_container .value{
+    width:300px;
+    height: 200px;
+    display:flex;
+    align-items: center;
+    background: #1a4789;
+    flex-direction: column;
+    border-radius: 30px;
+    justify-content: center;
+
+}
+.sobreNos__content .sobre .value_container .value h2{
+    text-align: center;
+    color: white;
+}
+
+.sobreNos__content .social__midia{
+    height: 100vh;
+    width: 50%;
+    background: #3255a0;
+    clip-path: polygon(29.8% 0, 100% 0%, 100% 100%, 0% 100%);
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.sobreNos__content div{
+    color: white;
+    font-weight: bold;
+}
+.sobreNos__content .sobreNos__content .sobre .value_container .value p{
+    width:100%;
+    text-align:center;
+}
+.sobreNos__content .sobre .direitos_reservados{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    height:40px;
+}
+.sobreNos__content .sobre .direitos_reservados{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.sobreNos__content .sobre .direitos_reservados p:nth-child(1){
+    color: #3255a0;
+    font-weight: 200;
+}
+.sobreNos__content .sobre .direitos_reservados p:nth-child(2){
+    color: red;
+    font-weight: 200;
+}
+
+.sobreNos__content .social__midia .container__img{
+    width:60%;
+    height:70%;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-direction:column;
+}
+
+.sobreNos__content .social__midia .container__img .img{
+    width:50px;
+    height:50px;
+    background-color:white;
+    border-radius:50%;
+    cursor:pointer;
+}
+.sobreNos__content .social__midia .container__img .img img{
+    width:100%;
+    height:100%;
+    border-radius:inherit
+}
+.sobreNos__content .social__midia .container__img .instagram__img{
+    transform:translate(170%,10%)
+}
+.sobreNos__content .social__midia .container__img .twitter__img{
+    transform:translate(-170%,-140%)
+}
+.sobreNos__content .social__midia .container__img .linkedin__img{
+    transform:translate(40%, -150%)
+}
+
+.sobreNos__content .social__midia .container__kairosLogo{
+    width:200px;
+    height:200px;   
+}
+.sobreNos__content .social__midia .container__kairosLogo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
