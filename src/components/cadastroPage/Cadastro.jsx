@@ -42,9 +42,9 @@ function Cadastro(){
       const addUser = async e => {
           e.preventDefault();
             var verificacao = false 
-            const confirmSenha = document.getElementById('confirmPassword')
-            const senha = document.getElementById('passwordUser')
-            const textError = document.querySelector('.textoErrado')
+            let confirmSenha = document.getElementById('confirmPassword')
+            let senha = document.getElementById('passwordUser')
+            let textError = document.querySelector('.textoErrado')
             if(confirmSenha.value != senha.value){
                 textError.classList.add('active')
             }
