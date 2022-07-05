@@ -1,0 +1,54 @@
+package br.com.kairos.api_banco_kairos.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.kairos.api_banco_kairos.EXTENSAO.IUsuario;
+import br.com.kairos.api_banco_kairos.model.Usuario;
+
+@CrossOrigin(origins = "http://localhost:3000/", maxAge = 3600)
+@RestController
+@RequestMapping("/usuario")
+public class UsuarioController {
+
+	@Autowired  //Joga os metodos para a extensao
+	private IUsuario dao;
+	
+	@GetMapping
+	public List<Usuario>  listaUsuario(){
+		return (List<Usuario>) dao.findAll();
+	}
+	
+	@PostMapping
+	public Usuario criarUsuario(@RequestBody Usuario usuario) {
+		Usuario usuarioNovo = dao.save(usuario);
+		return usuarioNovo;
+	}
+	
+	@PutMapping
+	public Usuario editarUsuario(@RequestBody Usuario usuario) {
+		Usuario usuarioAtualizado = dao.save(usuario);
+		return usuarioAtualizado;
+	}
+	
+	@DeleteMapping("/{id}")
+	public Optional<Usuario> excluirUsuario (@PathVariable Integer id) {
+		Optional<Usuario> usuario = dao.findById(id);
+		dao.deleteById(id);
+		return usuario;
+	}
+	
+	
+	//@RequestMapping("/usuario_juridico");
+}
