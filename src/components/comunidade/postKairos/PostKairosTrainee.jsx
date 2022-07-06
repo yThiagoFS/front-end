@@ -9,7 +9,7 @@ export default function PostKairosTrainee(){
 
     return(
         <PostKairos title ={"Intercâmbio Trainee"}
-        imgPost  ={intercambioAuPair}
+        imgPost  ={imgTrainee}
         description ={"O intercâmbio do tipo Trainee visa dar mais experiência ao universitário na vida profissional, seja ela ligada diretamente a sua área de estudo ou não. T fluência em outra língua e vivência no exterior são cada vez mais exigidos dos profissiona recém-formados. Você vai ter a oportunidade de aperfeiçoar o seu inglês enquanto desenvol várias habilidades profissionais no dia a dia de uma empresa internacional, além  fazer contato com pessoas do mundo todo e conhecer uma nova cultura. Você ganhará u bagagem que vai ser um grande diferencial no momento de ingressar no mercado de trabalho. "}
         subtitle ={"O que é preciso para realizar o intercâmbio Trainee?"}
         firstTip ={"1 - Requisitos básicos"}
