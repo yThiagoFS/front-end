@@ -141,10 +141,11 @@ function changeState(){
                 <span>Perfil</span>
             </div> </Link>
 
-            <div className="wrapper__vaquinha item">
+            <Link to ="/Vaquinha"><div className="wrapper__vaquinha item">
                 <RiMoneyDollarCircleFill/>
                 <span>Apoio</span>
             </div>
+            </Link>
 
             <div className="wrapper__salvos item">
                 <RiBookmarkLine/>
