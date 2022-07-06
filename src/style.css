@@ -19,7 +19,7 @@ a{
     text-decoration:none;
 }
 a:visited{
-    color:inherit;
+    color:white;
 }
 
 @keyframes showModal{
