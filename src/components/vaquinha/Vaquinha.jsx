@@ -100,6 +100,17 @@ function Vaquinha(){
             arrecadado:"R$ 14.978,00", 
             pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png", 
             porcentagem:"73%"
+        },
+       {
+            cardImg:imgPerfil,
+            nome:"Matheus Yuri", 
+            tipo:"High School", 
+            duracao:"1 ano", 
+            id:"32839217", 
+            meta:"R$ 20.500,00", 
+            arrecadado:"R$ 14.978,00", 
+            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png", 
+            porcentagem:"73%"
         }
     ])
 
