@@ -29,6 +29,7 @@ import marinaImg from "../comunidade/img/marinaImg.jpg"
 import gustavoImg from "../comunidade/img/gustavoImg.jpg"
 import vicImg from "../comunidade/img/vicImg.jpg"
 import migImg from "../comunidade/img/imgMiguel.jpg"
+import rbImg from "../comunidade/img/rb-img.jpg"
 
 
 import Card from "./cards/Card"
@@ -103,8 +104,8 @@ function Vaquinha(){
             porcentagem:"73%"
         },
        {
-            cardImg:migImg,
-            nome:"Matheus Yuri", 
+            cardImg:rbImg,
+            nome:"Ryan Brayan", 
             tipo:"Idiomas", 
             duracao:"1 ano", 
             id:"32839217", 
