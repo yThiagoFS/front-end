@@ -38,43 +38,6 @@ function Comunidade(){
 
     const [btnTeste, setBtnTeste] = useState( <button className="btn__login" onClick={handleOpenModal}>Entrar</button>)
 
-    function changeBtn(){
-        setBtnTeste(<div className="userProfile" onClick={openModalConfig}>
-        <div className="userProfile__img">
-               <img src={kairosLogo}/>
-        </div>
-
-        <div className="modal__config">
-
-           <Link to ="/Perfil"> <div className="wrapper__profile item">
-                <CgProfile/>
-                <span>Perfil</span>
-            </div> </Link>
-
-            <div className="wrapper__vaquinha item">
-                <RiMoneyDollarCircleFill/>
-                <span>Apoio</span>
-            </div>
-
-            <div className="wrapper__salvos item">
-                <RiBookmarkLine/>
-                <span>Salvos</span>
-            </div>
-
-            <div className="wrapper__config item">
-                <BsGearWide/>
-                <span>Configurações</span>
-            </div>
-
-            <div className="logout__btn item">
-                <span>Sair</span>
-            </div>
-        </div>
-
-       
-    </div>)
-    }
-
     function openModalConfig(){
         const modalConfig = document.querySelector('.modal__config')
         if(modalConfig.classList.contains('is-active')){
@@ -162,6 +125,45 @@ function Comunidade(){
     function handleCloseModal(){
         setIsOpen(false)
     }
+
+function changeState(){
+        setIsOpen(false)
+    
+     setBtnTeste(<div className="userProfile" onClick={openModalConfig}>
+        <div className="userProfile__img">
+               <img src={kairosLogo}/>
+        </div>
+
+        <div className="modal__config">
+
+           <Link to ="/Perfil"> <div className="wrapper__profile item">
+                <CgProfile/>
+                <span>Perfil</span>
+            </div> </Link>
+
+            <div className="wrapper__vaquinha item">
+                <RiMoneyDollarCircleFill/>
+                <span>Apoio</span>
+            </div>
+
+            <div className="wrapper__salvos item">
+                <RiBookmarkLine/>
+                <span>Salvos</span>
+            </div>
+
+            <div className="wrapper__config item">
+                <BsGearWide/>
+                <span>Configurações</span>
+            </div>
+
+            <div className="logout__btn item">
+                <span>Sair</span>
+            </div>
+        </div>
+
+       
+    </div>)
+}
    
     return(
         <>
@@ -220,7 +222,7 @@ function Comunidade(){
                                         <label for="password__login">Digite sua senha</label>
                                         <input type="password" id="password__login"></input>
                                     </div>
-                                    <div className="entrar__btn" onClick={changeBtn}>Entrar</div>
+                                    <div className="entrar__btn" onClick={changeState}>Entrar</div>
                                 </div>
                                 <span className="or">ou</span>
                                 <div className="accounts__login">
