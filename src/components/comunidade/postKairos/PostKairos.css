@@ -180,8 +180,8 @@ html{
     row-gap:10px;
 }
 .comunidade__contentKairos .timeline li .wrapperPost .containter__tips li .img__li{
-    max-width:400px;
-    max-height:250px;
+    width:400px;
+    height:250px;
 }
 .comunidade__contentKairos .timeline li .wrapperPost .containter__tips li .img__li img{
     width:100%;
