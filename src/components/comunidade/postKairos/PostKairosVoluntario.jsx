@@ -1,11 +1,14 @@
 import PostKairos from "./PostKairos.jsx"
-import intercambioAuPair from "../img/imgIntercambioAuPair.jpg"
+import imgVoluntario from "../img/imgVoluntario.png"
+import imgVoluntarioRequisitos from "../img/imgVoluntario-requisitos.jpg"
+import imgVoluntarioSelf from "../img/imgVoluntario-self.jpg"
+import imgVoluntarioDocumentos from "../img/imgVoluntario-documentos.png"
 
 export default function PostKairosVoluntario(){
 
     return(
         <PostKairos title ={`Intercâmbio Voluntário`}
-        imgPost  ={intercambioAuPair}
+        imgPost  ={imgVoluntario}
         description ={`Intercâmbio Voluntário é uma viagem cujo objetivo é principalmente ajudar um projeto social.
         Viajando como voluntário, você terá uma maior imersão cultural e conhecerá mais de perto a
         realidade do país, além de ajudar um projeto. Normalmente você ajuda uma ONG ou
@@ -17,14 +20,14 @@ export default function PostKairosVoluntario(){
         currículo e ser introduzido a uma cultura diferente da sua.`}
         subtitle ={`O que é preciso para realizar o intercâmbio Voluntário?`}
         firstTip ={`1 - Requisitos básicos`}
-        firstTipImg ={`http://seja1gm.com.br/wp-content/uploads/2019/10/EXIGENCIAS.png`}
+        firstTipImg ={imgVoluntarioRequisitos}
         firstTipDescription ={`Ter mais que 18 anos e ser estudante de graduação, pós-graduação ou ser recém-formado há até 12 meses (não podendo embarcar após 12 meses da conclusão do curso).`}
         secondTip={`2 - Se voluntariar`}
-        secondTipImg ={`https://www.estudaringlesonline.com.br/wp-content/uploads/2016/12/Head_English.png`}
+        secondTipImg ={imgVoluntarioSelf}
         secondTipDescription ={`Se conectar a uma ONG ou comunidade com vagas abertas e passar por um processo de
         seleção de vaga.`}
         thirdTip ={`3 - Documentos`}
-        thirdTipImg ={`https://azzolinadvogados.com.br/wp-content/uploads/2021/05/agendamento-carteira-de-trabalho-guia-completo-01-1024x512.png`}
+        thirdTipImg ={imgVoluntarioDocumentos}
         thirdTipDescription ={`Ter documentos básicos como passaporte e visto (dependendo do país).`}/> 
         
        
