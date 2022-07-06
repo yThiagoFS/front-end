@@ -1,10 +1,6 @@
 import React from "react"
 import "./Sobre-nos.css";
 
-import imgInstagram from "./img/instagram-logo.jpg"
-import imgGitHub from "./img/github-logo.png"
-import imgLinkedin from "./img/linkedin-logo.png"
-import kairosLogo from "./img/kairos-logo.png"
 
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs"
 
