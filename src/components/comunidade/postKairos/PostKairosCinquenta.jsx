@@ -2,7 +2,7 @@ import PostKairos from "./PostKairos.jsx"
 import intercambio50 from "../img/50.jpg"
 import cinquentaFirsTipImg from "../img/requisitos-basicos-img-50.png"
 import disposicaoCinquenta from "../img/disposicao-cinquenta.png"
-import escolherLocalCinquenta from "../img/escolher-local-cinquenta.jpg
+import escolherLocalCinquenta from "../img/escolher-local-cinquenta.jpg"
 
 export default function PostKairosCinquenta(){
 
