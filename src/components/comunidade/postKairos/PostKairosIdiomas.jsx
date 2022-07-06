@@ -1,6 +1,6 @@
 import PostKairos from "./PostKairos.jsx"
 import imgIdioma from "../img/imgIdiomas.png"
-import idiomaRequisitos from "../img/idioma-requisitos.png
+import idiomaRequisitos from "../img/idioma-requisitos.png"
 import idiomaViagem from "../img/idioma-viagem.png"
 import idiomaPesquisar from "../img/idioma-pesquisar.png"
 
