@@ -28,6 +28,7 @@ import dougImg from "../comunidade/img/dougImg.jpg"
 import marinaImg from "../comunidade/img/marinaImg.jpg"
 import gustavoImg from "../comunidade/img/gustavoImg.jpg"
 import vicImg from "../comunidade/img/vicImg.jpg"
+import migImg from "../comunidade/img/imgMiguel.jpg"
 
 
 import Card from "./cards/Card"
@@ -91,7 +92,7 @@ function Vaquinha(){
             porcentagem:"23%"
         },
         {
-            cardImg:imgPerfil,
+            cardImg:migImg,
             nome:"Miguel Vital", 
             tipo:"High School", 
             duracao:"1 ano", 
@@ -102,15 +103,15 @@ function Vaquinha(){
             porcentagem:"73%"
         },
        {
-            cardImg:imgPerfil,
+            cardImg:migImg,
             nome:"Matheus Yuri", 
-            tipo:"High School", 
+            tipo:"Idiomas", 
             duracao:"1 ano", 
             id:"32839217", 
-            meta:"R$ 20.500,00", 
-            arrecadado:"R$ 14.978,00", 
-            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png", 
-            porcentagem:"73%"
+            meta:"R$ 10.200,00", 
+            arrecadado:"R$ 6.400,00", 
+            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/2560px-Flag_of_Chile.svg.png", 
+            porcentagem:"62%"
         }
     ])
 
