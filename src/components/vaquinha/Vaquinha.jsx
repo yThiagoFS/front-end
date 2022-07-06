@@ -46,7 +46,7 @@ function Vaquinha(){
             id:"32839212", 
             meta:"R$ 10.250,00", 
             arrecadado:"R$ 6.500,00", 
-            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png", 
+            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1024px-Flag_of_Germany.svg.png", 
             porcentagem:"63%"
         },
         {
@@ -112,7 +112,7 @@ function Vaquinha(){
             id:"32839218", 
             meta:"R$ 10.200,00", 
             arrecadado:"R$ 6.400,00", 
-            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/2560px-Flag_of_Chile.svg.png", 
+            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/1280px-Flag_of_Egypt.svg.png", 
             porcentagem:"62%"
         },
        {
