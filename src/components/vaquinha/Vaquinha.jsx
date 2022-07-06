@@ -24,6 +24,10 @@ import Modal from "react-modal"
 
 import kairosLogo from "../comunidade/img/kairos-logo.png"
 import imgPerfil from "../comunidade/img/minhaImg.jpg"
+import dougImg from "../comunidade/img/dougImg.jpg"
+import marinaImg from "../comunidade/img/marinaImg.jpg"
+import gustavoImg from "../comunidade/img/gustavoImg.jpg"
+import vicImg from "../comunidade/img/vicImg.jpg"
 
 
 import Card from "./cards/Card"
@@ -33,58 +37,58 @@ function Vaquinha(){
     const [cards, setCards] = useState([
         {
             cardImg:imgPerfil,
-            nome:"Miguel VItal", 
-            tipo:"Idiomas", 
-            duracao:"10 meses", 
-            id:"32839212", 
-            meta:"R$ 7.500,00", 
-            arrecadado:"R$ 4.978,00", 
-            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png", 
-            porcentagem:"30%"
-        },
-        {
-            cardImg:imgPerfil,
             nome:"Thiago Ferreira", 
             tipo:"Idiomas", 
-            duracao:"6 meses", 
+            duracao:"1 ano", 
             id:"32839212", 
-            meta:"R$ 7.500,00", 
-            arrecadado:"R$ 4.978,00", 
+            meta:"R$ 10.250,00", 
+            arrecadado:"R$ 6.500,00", 
             pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png", 
-            porcentagem:"60%"
+            porcentagem:"63%"
         },
         {
-            cardImg:imgPerfil,
-            nome:"Thiago Ferreira", 
+            cardImg:dougImg,
+            nome:"Douglas Araújo", 
             tipo:"Idiomas", 
             duracao:"6 meses", 
-            id:"32839212", 
-            meta:"R$ 7.500,00", 
-            arrecadado:"R$ 4.978,00", 
-            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png", 
-            porcentagem:"80%"
+            id:"32839213", 
+            meta:"R$ 10.000,00", 
+            arrecadado:"R$ 5.930,00", 
+            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png", 
+            porcentagem:"59%"
         },
         {
-            cardImg:imgPerfil,
-            nome:"Thiago Ferreira", 
-            tipo:"Idiomas", 
-            duracao:"6 meses", 
-            id:"32839212", 
-            meta:"R$ 7.500,00", 
-            arrecadado:"R$ 4.978,00", 
-            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png", 
-            porcentagem:"30%"
+            cardImg:marinaImg,
+            nome:"Marina Santos", 
+            tipo:"Au Pair", 
+            duracao:"3 meses", 
+            id:"32839214", 
+            meta:"R$ 5.000,00", 
+            arrecadado:"R$ 2.578,23", 
+            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/2560px-Flag_of_Portugal.svg.png", 
+            porcentagem:"51%"
         },
         {
-            cardImg:imgPerfil,
-            nome:"Thiago Ferreira", 
+            cardImg:gustavoImg,
+            nome:"Gustavo Alves", 
+            tipo:"Graduação", 
+            duracao:"3 anos", 
+            id:"32839215", 
+            meta:"R$ 15.000,00", 
+            arrecadado:"R$ 3.00,00", 
+            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png", 
+            porcentagem:"20%"
+        },
+        {
+            cardImg:vicImg,
+            nome:"Vitória Sena", 
             tipo:"Idiomas", 
-            duracao:"6 meses", 
-            id:"32839212", 
-            meta:"R$ 7.500,00", 
-            arrecadado:"R$ 4.978,00", 
-            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png", 
-            porcentagem:"60%"
+            duracao:"1 semestre", 
+            id:"32839216", 
+            meta:"R$ 3.000,00", 
+            arrecadado:"R$ 700,00", 
+            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/2560px-Flag_of_Italy.svg.png", 
+            porcentagem:"23%"
         },
         {
             cardImg:imgPerfil,
