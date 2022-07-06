@@ -13,7 +13,8 @@ import imgTrainee from "./imgIntercambio/student.png";
 import imgCinquenta from "./imgIntercambio/aniversario.png";
 
 import img1 from "./imgIntercambio/img1.jpg"
-import imgTaxi from "./imgIntercambio/taxiImgTrail.png"
+import img2 from "./imgIntercambio/intercambio.jpg"
+
 
 import {AiFillCloseCircle} from "react-icons/ai"
 
@@ -156,7 +157,7 @@ function TiposIntercambio(){
 
                     <div className="containerImg__trail">
                         <div className="img__container">
-                            <img className="img1 img" src={img1}/>
+                            <img className="img1 img" src={img2}/>
                         </div>
                         <div className="img__container"><img className="img2 img" src={img1}/></div>
                     </div>
