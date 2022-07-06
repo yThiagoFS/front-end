@@ -1,11 +1,14 @@
 import PostKairos from "./PostKairos.jsx"
-import intercambioAuPair from "../img/imgIntercambioAuPair.jpg"
+import imgProfissional from "../img/imgProfissional.jpg"
+import imgProfissionalRequisito from "../img/imgProfissional-requisito.png"
+import imgProfissionalOportunidades from "../img/imgProfissional-oportunidades.jpg"
+import imgProfissionalPesquisa from "../img/imgProfissional-Pesquisa.jpg"
 
 export default function PostKairosProfissional(){
 
     return(
         <PostKairos title ={`Intercâmbio Profissional`}
-        imgPost  ={intercambioAuPair}
+        imgPost  ={imgProfissional}
         description ={`Esse tipo de intercâmbio tem como uma possibilidade de morar e trabalhar em outro país, por
         um tem preestabelecido. As opções são várias e você pode atuar em empresas, entidades
         sociais ou famílias, por exemplo. Você terá que usar parte das suas reservas financeiras para
@@ -15,18 +18,18 @@ export default function PostKairosProfissional(){
         sua carreira também.`}
         subtitle ={`O que é preciso para realizar o intercâmbio profissional?`}
         firstTip ={`1 - Requisitos básicos`}
-        firstTipImg ={`http://seja1gm.com.br/wp-content/uploads/2019/10/EXIGENCIAS.png`}
+        firstTipImg ={imgProfissionalRequisito}
         firstTipDescription ={`Escolher o tipo de intercâmbio profissional é uma atividade laboral, você precisa pensar
         melhor nessa dinâmica para que ela aconteça. Decidir isso depois de chegar ao destino não é
         uma boa ideia.`}
         secondTip={`2 - Avaliar as oportunidades`}
-        secondTipImg ={`https://www.estudaringlesonline.com.br/wp-content/uploads/2016/12/Head_English.png`}
+        secondTipImg ={imgProfissionalOportunidades}
         secondTipDescription ={`Buscar uma agência ou empresas focadas em intercâmbios profissionais para analisar
         quais são as possibilidades disponíveis. Essas organizações geralmente já têm contatos no
         exterior para mandar os brasileiros que pretendem trabalhar fora.
         `}
         thirdTip ={`3 - Pesquisar sobre o destino`}
-        thirdTipImg ={`https://azzolinadvogados.com.br/wp-content/uploads/2021/05/agendamento-carteira-de-trabalho-guia-completo-01-1024x512.png`}
+        thirdTipImg ={imgProfissionalPesquisa}
         thirdTipDescription ={`Todo lugar tem o seu encanto, mas alinhar as suas expectativas é muito importante para evitar
         frustações, todos os detalhes são relevantes, desde o clima predominante até o valor da
         moeda local. Pense no idioma, na infraestrutura da cidade, nas diferenças de cultura, nas
