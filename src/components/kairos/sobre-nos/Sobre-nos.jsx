@@ -1,6 +1,8 @@
 import React from "react"
 import "./Sobre-nos.css";
 
+import kairosLogo from "./img/kairos-logo.png"
+
 
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs"
 
