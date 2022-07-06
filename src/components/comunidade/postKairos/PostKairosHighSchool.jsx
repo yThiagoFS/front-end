@@ -1,11 +1,14 @@
 import PostKairos from "./PostKairos.jsx"
-import intercambioAuPair from "../img/imgIntercambioAuPair.jpg"
+import imgHighSchool from "../img/highschool.jpg"
+import highSchoolRequisito from "../img/highschool-requisitos.png"
+import highSchoolVontade from "../img/highSchool-vontade.jpg"
+import highSchoolDisciplina from "../img/highSchool-disciplina.jpg"
 
 export default function PostKairosHighSchool(){
 
     return(
         <PostKairos title ={`Intercâmbio High School`}
-        imgPost  ={intercambioAuPair}
+        imgPost  ={imgHighSchool}
         description ={`O intercâmbio High School é um programa de experiência internacional no qual o jovem
         estudante cursa parte do ensino médio no exterior, vivendo como um local e tornando-se um
         cidadão do mundo.
@@ -16,15 +19,15 @@ export default function PostKairosHighSchool(){
         subtitle ={`O que é preciso para realizar o intercâmbio Graduação?
         `}
         firstTip ={`1 - Requisitos básicos`}
-        firstTipImg ={`http://seja1gm.com.br/wp-content/uploads/2019/10/EXIGENCIAS.png`}
+        firstTipImg ={highSchoolRequisito}
         firstTipDescription ={`O intercâmbio High School pode ser feito por jovens de tenham entre 15 e 18 anos e meio até
         a data do embarque. Também é necessário estar cursando o Ensino Médio no Brasil ou ter acabado de se formar.`}
         secondTip={`2 - Vontade`}
-        secondTipImg ={`https://www.estudaringlesonline.com.br/wp-content/uploads/2016/12/Head_English.png`}
+        secondTipImg ={highSchoolVontade}
         secondTipDescription ={`Além das regras exigidas por cada país, o intercambista precisa querer viver essa aventura, ou
         seja, é necessário embarcar com um espírito positivo, ser flexível, ter muita disposição e principalmente vontade de aprender.`}
         thirdTip ={`3 - Disciplina`}
-        thirdTipImg ={`https://azzolinadvogados.com.br/wp-content/uploads/2021/05/agendamento-carteira-de-trabalho-guia-completo-01-1024x512.png`}
+        thirdTipImg ={highSchoolDisciplina}
         thirdTipDescription ={`As matérias a serem escolhidas são divididas em cinco áreas e é necessário cursar pelo menos
         uma de cada área, sendo elas: ciências biológicas, práticas educativas, ciências exatas, estudos sociais e comunicação e expressão.`}/> 
         
