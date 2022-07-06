@@ -30,6 +30,7 @@ import gustavoImg from "../comunidade/img/gustavoImg.jpg"
 import vicImg from "../comunidade/img/vicImg.jpg"
 import migImg from "../comunidade/img/imgMiguel.jpg"
 import rbImg from "../comunidade/img/rb-img.jpg"
+import yuriImg from "../comunidade/img/imgYuri.jpg"
 
 
 import Card from "./cards/Card"
@@ -108,13 +109,26 @@ function Vaquinha(){
             nome:"Ryan Brayan", 
             tipo:"Idiomas", 
             duracao:"1 ano", 
-            id:"32839217", 
+            id:"32839218", 
             meta:"R$ 10.200,00", 
             arrecadado:"R$ 6.400,00", 
             pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/2560px-Flag_of_Chile.svg.png", 
             porcentagem:"62%"
+        },
+       {
+            cardImg:yuriImg,
+            nome:"Matheus Yuri", 
+            tipo:"Trainee", 
+            duracao:"6 meses", 
+            id:"32839219",
+            meta:"R$ 2.00,00", 
+            arrecadado:"R$ 400,00", 
+            pais:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1280px-Flag_of_Spain.svg.png", 
+            porcentagem:"20%"
         }
     ])
+    
+    
 
     
     const [btnTeste, setBtnTeste] = useState( <button className="btn__login" onClick={handleOpenModal}>Entrar</button>)
