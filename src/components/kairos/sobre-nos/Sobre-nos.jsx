@@ -1,11 +1,12 @@
 import React from "react"
 import "./Sobre-nos.css";
 
-import imgFacebook from "./img/facebook-icon.png"
-import imgInstagram from "./img/instagram-icon.png"
-import imgTwitter from "./img/twitter-icon.png"
-import imgLinkedin from "./img/linkedin-icon.png"
+import imgInstagram from "./img/instagram-logo.jpg"
+import imgGitHub from "./img/github-logo.png"
+import imgLinkedin from "./img/linkedin-logo.png"
 import kairosLogo from "./img/kairos-logo.png"
+
+import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs"
 
 
 
@@ -51,33 +52,19 @@ function SobreNos(){
 
             <div className="social__midia">
 
-                <div className="container__img">
-
-                    <div className="facebook__img img">
-                        <img src={imgFacebook}/>
-                        
-                    </div>
-
-                    <div className="instagram__img img">
-                        <img src={imgInstagram}/>
-                        
-                    </div>
-
-                    <div className="twitter__img img">
-                        <img src={imgTwitter}/>
-                        
-                    </div>
-
-                    <div className="linkedin__img img">
-                        <img src={imgLinkedin}/>
-                        
-                    </div>
-
-                </div>
-
                 <div className="container__kairosLogo">
                     <img src={kairosLogo}/>
                 </div>
+                <div className="container__img">
+
+                    <BsLinkedin className="icon"/>
+
+                    <BsGithub className="icon"/>
+
+                    <BsInstagram className="icon"/>
+
+                </div>
+
 
             </div>
         </div>
