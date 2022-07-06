@@ -150,6 +150,8 @@
     cursor:pointer;
     transition:.6s ease all;
 }
+.perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__options ul a li{
+    color:#3255a0}
 .perfil__content .perfil__contentMain .perfilUser__wrapper .perfilUser__options ul li:hover{
     transform:scale(1.2);
     text-shadow: 0 0 10px #3255a0;
