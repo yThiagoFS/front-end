@@ -2,6 +2,9 @@
 	height: 100vh;
 	position:relative;
 	overflow:hidden;
+	animation:animBgColor 7s ease-in-out infinite alternate;
+	display:flex;
+	flex-direction:column
 }
 
 .wrapper__inicio :is(.diagonalEsq, .diagonalDir){
@@ -9,6 +12,7 @@
 	width:700px;
 	background-color:#3255a0;
 	position:absolute;
+	animation:animBgBlue 7s ease-in-out infinite alternate
 }
 .wrapper__inicio .diagonalEsq{
 	bottom:0;
@@ -30,10 +34,17 @@
 	color: #3255A0;
 	display: flex;
 	padding: 70px 0 0 10%;
+	animation: animTextColor 7s ease-in-out infinite alternate;
 }
-.wrapper__inicio .main_inicio{
-	display: flex;
-	justify-content: center;
+
+.wrapper__inicio  #imgLogo{
+	animation: changeImg 7s ease-in-out infinite alternate;
+	width:300px;
+	height:200px;
+	align-self:center;
+	background-image:url('../img/kairos-logo-removebg.png');
+	background-size:cover;
+	background-repeat:no-repeat
 }
 .wrapper__inicio .footer_inicio{
 	display: flex;
@@ -44,6 +55,7 @@
 	color: #3255A0;
 	width: 45%;
 	padding-top: 60px;
+	animation: animTextColor 7s ease-in-out infinite alternate
 }
 .footer_inicio .form_inicio select{
 	background: none;
@@ -67,11 +79,63 @@
 	display: flex;
 	align-items: center;
 	border: none;
-	margin: 5% 0 0 0;
+	margin: 2% 0 0 0;
 	cursor:pointer;
+	animation: animTextBlue 7s ease-in-out infinite alternate, animBgBlue 7s ease-in-out infinite alternate
+
 }
 .submit_button .icon_arrow{
 	height: 100%;
 	width: 55px;
 	background-color: #1A4789;
+	animation: animBgBlue 7s ease-in-out infinite alternate, animTextBlue 7s ease-in-out infinite alternate
+}
+@keyframes changeImg{
+	from{
+		background-image:url('../img/kairos-logo-removebg.png')
+	}
+	to{
+		background-image:url('../img/kairos-logo-branco.png')
+	}
+}
+@keyframes animMoveLogo{
+	from {
+		transform:translateX(-50px)
+	}
+	to{
+		transform:translateX(100px);
+	}
+}
+
+@keyframes animBgColor{
+	from{
+		background-color:white;
+	}
+	to{
+		background-color:#3255a0;
+	}
+}
+@keyframes animBgBlue{
+	from{
+		background-color:#3255a0;
+	}
+	to{
+		background-color:white;
+	}
+}
+@keyframes animTextColor{
+	from{
+		color:#3255a0;
+	}
+	to{
+		color:white;
+	}
+}
+@keyframes animTextBlue{
+	from{
+		color:white;
+	}
+	to{
+		color:#3255a0;
+	}
 }
