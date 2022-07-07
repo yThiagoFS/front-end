@@ -1,11 +1,14 @@
-import React from "react"
+import Reactfrom "react"
 import "./Inicio.css";
-import logo from "../img/kairos-logo.png";
+import logo from "../img/kairos-logo-removebg.png";
+import logoBranca from "../comunidade/img/kairos-logo.png"
 import  {IoIosArrowDroprightCircle} from "react-icons/io"
 
 import { Link } from "react-router-dom";
 
 function Inicio(){
+
+
     return(
 		<>
         <div className="wrapper__inicio">
@@ -15,9 +18,8 @@ function Inicio(){
 			<div className='menu_inicio'>
 				<p>Kairos, o intercâmbio <br/> de verdade!</p>
 			</div>
-			<div className='main_inicio'>
-				<img src={logo} height='270px'/>
-			</div>
+				<div id="imgLogo"></div>
+		
 			<div className='footer_inicio'> 
 				<form className="form_inicio">
 					Eu quero vivenciar 
