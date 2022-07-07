@@ -141,15 +141,15 @@ function Vaquinha(){
 
         <div className="modal__config">
 
-           <Link to ="/"> <div className="wrapper__profile item">
+           <Link to ="/Perfil"> <div className="wrapper__profile item">
                 <CgProfile/>
                 <span>Perfil</span>
             </div> </Link>
 
-            <div className="wrapper__vaquinha item">
+           <Link to ="/Vaquinha"> <div className="wrapper__vaquinha item">
                 <RiMoneyDollarCircleFill/>
                 <span>Vaquinhas</span>
-            </div>
+            </div> </Link>
 
             <div className="wrapper__salvos item">
                 <RiBookmarkLine/>
