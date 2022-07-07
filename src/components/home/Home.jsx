@@ -77,7 +77,7 @@ function HomePage() {
             <header className="header__content">
                 <nav className="nav">
 
-                    <Link to "/"> <span className="logoImg"><img src={imgLogo} />
+                    <Link to ="/"> <span className="logoImg"><img src={imgLogo} />
                     </span> </Link>
 
                     <ul className="navlist">
