@@ -46,11 +46,11 @@
 .header__content .nav .navlist li:hover a::after {
    width:100%;
 }
-.header__content .nav .logoImg{
+.header__content .nav a .logoImg{
     width:80px;
     height:80px;
 }
-.header__content .nav .logoImg>img{
+.header__content .nav a .logoImg>img{
     width:140%;
     height:140%;
     object-fit:contain;
