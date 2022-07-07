@@ -1,4 +1,4 @@
-import Reactfrom "react"
+import React from "react"
 import "./Inicio.css";
 import logo from "../img/kairos-logo-removebg.png";
 import logoBranca from "../comunidade/img/kairos-logo.png"
