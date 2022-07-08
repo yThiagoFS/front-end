@@ -12,7 +12,7 @@ function Colaboracao(){
 
             <div className="first__content">
                 
-                <p>contribua para a <br/>
+                <p>Contribua para a <br/>
                 realização do sonho <br/>
                 de muitos jovens!
                 <span>Seja um investidor anjo!</span></p>
