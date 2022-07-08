@@ -37,7 +37,7 @@ function Cadastro(){
             <div className="pessoaJuridica__content">
 
                 <div className="cadastro__header">
-                   <Link to="/Colaboracao"> <MdOutlineKeyboardBackspace className="back__icon"/> </Link>
+                   <Link to="/Choose"> <MdOutlineKeyboardBackspace className="back__icon"/> </Link>
                     <h1>República Federativa do Cadastro</h1>
                 </div>
 
